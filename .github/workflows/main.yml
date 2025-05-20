@@ -1,0 +1,26 @@
+#This is a basic workflow created by sir roy olamilekan
+
+
+name: Olalekanyahaya
+
+#control when the workflow will run at the start of an  event
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      -  uses: actions/checkouts@v3
+      -  name: run a one-line script
+         run : echo Hello, world!
+
+         
+          
+      
+      
+    
